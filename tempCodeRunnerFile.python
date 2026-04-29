@@ -1,0 +1,21 @@
+
+import hashlib
+
+
+message="Hi this is sid"
+msg_byte=message.encode()
+
+
+sha_256_hash=hashlib.sha256(msg_byte)
+
+
+digest=sha_256_hash.hexdigest()
+
+
+print("Message",message)
+print("SH-256 digest",digest)
+
+
+
+
+
